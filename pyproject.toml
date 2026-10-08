@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ncma-validation-patterns"
+version = "0.1.0"
+description = "Standalone Python examples of safe API error transport and evidence-led validation"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Valter Lourenço Junior"}]
+dependencies = []
+
+[tool.setuptools]
+packages = ["validation_patterns"]
