@@ -2,7 +2,7 @@
 
 **Practical Python examples for safer AI tooling, API integrations and evidence-led delivery.**
 
-This repository contains three **standalone, reduced adaptations** of engineering lessons from the private NCMA Systems lab. These are **not copies of operational modules** or a production framework.
+This repository contains six **standalone, reduced adaptations** of engineering lessons from the private NCMA Systems lab. These are **not copies of operational modules** or a production framework.
 
 | Component | Problem | Demonstration |
 | --- | --- | --- |
@@ -66,6 +66,17 @@ assert quality.gate.value == "PASS"
 
 Zero false alarms without any defect tests cannot qualify a validator.
 
+## Model and ML evaluation
+
+Additional standalone examples cover [ASR WER/CER/RTF measurement](validation_patterns/asr_benchmark.py), [LLM decode and completion accounting](validation_patterns/llm_benchmark.py) and [train/dev/holdout split auditing](validation_patterns/split_audit.py).
+
+The [model evaluation guide](MODEL_EVALUATION.md) explains metrics, example limitations, and links to real, dated historical case studies. Original weights, training recipes, datasets and operational harnesses remain private.
+
+Run the **synthetic** demonstration with:
+
+```bash
+python -m examples.model_evaluation_demo
+```
 ## Engineering boundaries
 
 - [Design decisions](DESIGN_NOTES.md)
