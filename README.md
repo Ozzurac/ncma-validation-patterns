@@ -9,6 +9,9 @@ This repository contains six **standalone, reduced adaptations** of engineering 
 | [`errors.py`](validation_patterns/errors.py) | Upstream exceptions can expose secrets | Public error messages built from a strict allowlist |
 | [`differential.py`](validation_patterns/differential.py) | New validators can silently lose refusal coverage | Asymmetric migration testing; uncertainty is not PASS |
 | [`quality.py`](validation_patterns/quality.py) | Green dashboards hide false positives and missed defects | Recall, precision, FPR and evidence coverage |
+| [`asr_benchmark.py`](validation_patterns/asr_benchmark.py) | Accuracy claims need fixed speech samples and normalized scoring | WER, CER, exact agreement, latency and real-time factor |
+| [`llm_benchmark.py`](validation_patterns/llm_benchmark.py) | Fast inference can conceal truncation or completion bias | Decode accounting and completed/truncated/failed outcomes |
+| [`split_audit.py`](validation_patterns/split_audit.py) | Model adaptation risks train/dev/holdout contamination | Duplicate/provenance checks and dev-only checkpoint selection |
 
 ## Run it
 
@@ -77,6 +80,10 @@ Run the **synthetic** demonstration with:
 ```bash
 python -m examples.model_evaluation_demo
 ```
+## Architecture and evidence context
+
+See the sanitized [measurement and qualification flow](https://github.com/Ozzurac/ncma-engineering/blob/main/architecture/measurement-qualification.md) and [governed execution model](https://github.com/Ozzurac/ncma-engineering/blob/main/architecture/governed-execution.md). The diagrams discuss *logical responsibility and proof levels*, not the private codebase or deployment topology. The public examples below remain entirely synthetic.
+
 ## Engineering boundaries
 
 - [Design decisions](DESIGN_NOTES.md)
