@@ -10,8 +10,8 @@ in this repository is **synthetic**.
 
 ## Run
 
-In the existing `ncma-validation-patterns` repository, add the accompanying
-Python modules, tests and example script, then execute:
+From the root of this repository, run the **already included** modules,
+tests and synthetic example:
 
 ```bash
 python -m unittest discover -s tests -v
