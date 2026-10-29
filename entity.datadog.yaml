@@ -1,0 +1,20 @@
+# Datadog Software Catalog definition (schema v3). Ownership and links for this repository.
+apiVersion: v3
+kind: service
+metadata:
+  name: ncma-validation-patterns
+  displayName: NCMA Validation Patterns
+  description: "Python validation patterns: safe error transport, asymmetric regressions and evidence quality."
+  owner: ncma
+  tags:
+    - repo:ncma-validation-patterns
+    - language:python
+  links:
+    - name: Source
+      type: repo
+      url: https://github.com/Ozzurac/ncma-validation-patterns
+      provider: github
+spec:
+  languages: [python]
+  componentOf:
+    - system:ncma-platform
